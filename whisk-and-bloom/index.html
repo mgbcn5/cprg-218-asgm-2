@@ -2,70 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Whisk & Bloom Café</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sweet Bloom Bakery</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet" />
+
+  <!-- Link to your CSS -->
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="navbar">
-    <div class="logo">Whisk & Bloom</div>
-    <nav>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#video">Video</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="hamburger" onclick="toggleMenu()">☰</div>
-    </nav>
-  </header>
 
-  <section class="hero">
-    <h1>Whisk & Bloom</h1>
-    <p>Where mornings begin with magic.</p>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">Sweet Bloom</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#video">Video</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu-toggle">&#9776;</div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <img src="assets/images/hero.jpg" alt="Bakery Front" />
+    <div class="hero-text">
+      <h1>Freshly Baked, With Love</h1>
+      <p>Handcrafted pastries and artisan coffee</p>
+    </div>
   </section>
 
-  <section id="about" class="content">
+  <!-- Content Section -->
+  <section class="content">
     <h2>About Us</h2>
-    <p>Welcome to Whisk & Bloom, your cozy corner café for artisan pastries, crafted drinks, and a warm community feel. Inspired by nature and nurtured with love.</p>
+    <p>At Sweet Bloom Bakery, every treat is made from scratch with local, quality ingredients. We believe in baking with passion and purpose.</p>
   </section>
 
+  <!-- Card Section -->
   <section id="menu" class="cards">
-    <h2>Our Signature Menu</h2>
+    <h2>Our Favorites</h2>
     <div class="card-container">
       <div class="card">
-        <img src="assets/images/croissant.jpg" alt="Croissant">
+        <img src="assets/images/croissant.jpg" alt="Croissant" />
         <h3>Butter Croissant</h3>
-        <p>Flaky, golden layers baked fresh every morning.</p>
+        <p>Flaky, golden, and buttery.</p>
       </div>
       <div class="card">
-        <img src="assets/images/latte.jpg" alt="Rose Latte">
-        <h3>Rose Latte</h3>
-        <p>A floral-infused coffee experience like no other.</p>
+        <img src="assets/images/latte.jpg" alt="Latte" />
+        <h3>Oat Milk Latte</h3>
+        <p>Rich espresso with creamy oat milk.</p>
       </div>
       <div class="card">
-        <img src="assets/images/matcha-roll.jpg" alt="Matcha Roll">
-        <h3>Matcha Roll</h3>
-        <p>Soft matcha sponge cake with creamy green tea filling.</p>
+        <img src="assets/images/matcha-roll.jpg" alt="Matcha Roll" />
+        <h3>Matcha Roll Cake</h3>
+        <p>Light sponge with matcha cream filling.</p>
       </div>
     </div>
   </section>
 
+  <!-- Embedded Video -->
   <section id="video" class="video-section">
-    <h2>A Taste of Whisk & Bloom</h2>
-    <video controls>
+    <h2>Behind the Scenes</h2>
+    <video controls width="100%">
       <source src="assets/video.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
   </section>
 
+  <!-- Footer -->
   <footer id="contact">
-    <p>📍 123 Blossom St, Brewtown, AB</p>
-    <p>📧 hello@whiskandbloom.com</p>
-    <p>© 2025 Whisk & Bloom</p>
+    <p>&copy; 2025 Sweet Bloom Bakery. All rights reserved.</p>
   </footer>
 
+  <!-- Link to your JS -->
   <script src="script.js"></script>
 </body>
 </html>
